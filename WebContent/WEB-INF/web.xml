@@ -27,6 +27,6 @@
 	</servlet-mapping>
   
   
-  <!-- Adding to Spring Boot -->
+  <!-- Adding to Spring Boot1 -->
   
 </web-app>
