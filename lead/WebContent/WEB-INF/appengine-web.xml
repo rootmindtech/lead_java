@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<appengine-web-app xmlns="http://appengine.google.com/ns/1.0">
+
+  <threadsafe>true</threadsafe>
+  <sessions-enabled>false</sessions-enabled>
+  <runtime>java8</runtime>
+
+	<use-google-connector-j>true</use-google-connector-j>
+
+<!-- 	<service>cloudsql</service>
+ -->
+	<system-properties>
+		<property name="cloudleadsql"
+			value="jdbc:google:mysql://maabadi-219919:asia-south1:myinstance/lead?user=root&amp;password=password" />
+		<property name="cloudleadsql-local"
+			value="jdbc:mysql://google/lead?useSSL=false&amp;cloudSqlInstance=maabadi-219919:asia-south1:myinstance&amp;socketFactory=com.google.cloud.sql.mysql.SocketFactory&amp;user=root&amp;password=password" />
+	</system-properties>
+
+
+</appengine-web-app>
